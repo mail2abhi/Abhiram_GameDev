@@ -1162,3 +1162,30 @@ footer {
     color: var(--accent-green);
     margin-bottom: 0.5rem;
 }
+
+/* Freelance Section */
+.freelance-card .project-thumb {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+    aspect-ratio: 9/16;
+    height: auto;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.freelance-card {
+    border-radius: 20px;
+    /* Slightly more rounded for mobile feel */
+}
+
+.freelance-card:hover .project-thumb {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+}
+
+.placeholder-thumb i {
+    transition: var(--transition);
+}
+
+.freelance-card:hover .placeholder-thumb i {
+    color: var(--accent-blue);
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.5));
+}
